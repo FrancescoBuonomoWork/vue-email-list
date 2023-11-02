@@ -15,7 +15,7 @@
                 <h1>{{message}}</h1>
 
                 <ul>
-                    <li >{{emails[0]}}</li>
+                    <li v-for="(email,i) in emails" >{{email}}</li>
                 </ul>
             </div>
         </section>
