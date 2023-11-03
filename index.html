@@ -19,8 +19,12 @@
                     <li :class="emails.length === 10 ? 'active': 'none'"
                      v-for="(email,i) in emails" >{{email}}</li>
                 </ul> -->
-                <ul>
+                <!-- <ul>
                     <li v-show ="emails.length === 10 "
+                     v-for="(email,i) in emails" >{{email}}</li>
+                </ul> -->
+                <ul v-if ="emails.length === 10 ">
+                    <li 
                      v-for="(email,i) in emails" >{{email}}</li>
                 </ul>
             </div>
